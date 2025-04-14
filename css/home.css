@@ -25,22 +25,25 @@ body {
     padding: 0 5%;
 }
 
-.menu__items {
+.menu__items,
+.icon__items {
     list-style: none;
     display: flex;
 }
 
-.menu__items li {
+.menu__items li, 
+.icon__items li {
     padding: 10px 30px;
 }
 
-.menu__items li a {
+.menu__items li a,
+.icon__items li a {
     color: var(--color-white);
     text-decoration: none;
     font-size: 20px;
 }
 
-.menu__bar ul li a:hover{
+.menu__bar ul li a:hover,
+.icon__items li a:hover {
     color: var(--color-primary);
 }
-

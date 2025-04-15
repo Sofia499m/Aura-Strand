@@ -53,13 +53,12 @@ body {
     height: 40vh;
     display: block;
     object-fit: cover;
-    <!-- add to avoid squish  -->
+    /*add to avoid squish*/
     
 }
 
 .hair__type{
-   
-        display: flex;
+            display: flex;
         justify-content: center;
         align-items: center;             
 }
@@ -68,10 +67,14 @@ body {
     font-size: 20px;
     color: var(--color-black);
 }
-
+.circle-image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
 curly__hair {
     border-radius: 50%;
-  }
+}
 
 
 

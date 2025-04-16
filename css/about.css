@@ -76,3 +76,19 @@ body {
 .content{
     flex:1;
 }
+.title{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-color: peachpuff;
+    background-color: peachpuff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Tangerine", cursive;
+    font-size: x-large;
+}
+p{
+    font-size: x-large;
+    font-family: "Markazi Text", serif;
+}

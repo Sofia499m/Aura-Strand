@@ -49,5 +49,5 @@ body {
 
 .menu__bar ul li a:hover,
 .icon__items li a:hover {
-    color: var(--color-primary);
+    color: var(--color-black1);
 }

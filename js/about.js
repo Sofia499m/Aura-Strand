@@ -4,9 +4,9 @@ function carousel(){
     for(let i=0; i<slide.length; i++){
         slide[i].style.display="none";
     }
-    index++;
+    index++;//incress index
     if(index>slide.length){index=1}
     slide[index - 1].style.display="block";
-    setTimeout(carousel,2000);
+    setTimeout(carousel,2000);//slides time 
 }
 carousel();

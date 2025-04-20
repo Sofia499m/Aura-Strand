@@ -1,0 +1,62 @@
+/* content css */
+#space{
+    height: 50px;
+}
+.heading{
+    width: 90%;
+    text-align: center;
+    font-family: "Tangerine", cursive;
+    font-size: 40px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+}
+/* image slides */
+.myCarousel {
+    display: none;
+    width: 100%;
+}
+
+.myCarousel img {
+    width: 100%;
+    border-radius: 20px;
+}
+/* images */
+.image{
+    flex:1; /* item lenth */
+    margin-right: 40px;
+    width:100%;
+    height: 100%;
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+    display:block;
+    transition: 0.5 ease;
+    border-radius: 50%;
+}
+/* text */
+.content{
+    flex:1;/* item lenth */
+    background-color: #eeeee6;
+    padding: 20px;
+}
+.title{
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    border-color: peachpuff;
+    background-color: peachpuff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Tangerine", cursive;
+    font-size: x-large;
+}
+p{
+    font-size: x-large;
+    font-family: "Markazi Text", serif;
+}

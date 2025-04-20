@@ -7,10 +7,14 @@
     
 }
 
-.hair__type{
-            display: flex;
-        justify-content: center;
-        align-items: center;             
+.hair__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;            /* spacing between circles */
+    flex-wrap: wrap;      /* lets them wrap if the screen is small */
+    padding: 20px;
+             
 }
 
 .slogan {
@@ -18,9 +22,21 @@
     color: var(--color-black);
 }
 
-curly__hair {
+.curly__hair {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-  }
+    overflow: hidden;
+    flex-shrink: 0; /* prevents shrinking on small screen */
+}
+
+.curly__hair img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 
 

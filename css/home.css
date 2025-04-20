@@ -69,9 +69,31 @@ body {
     color: var(--color-black);
 }
 
-curly__hair {
+.hair__circle {
+    display: flex; /* Flexbox container */
+    flex-direction: row; /* Arrange images horizontally */
+    justify-content: space-between; /* Space between images */
+    align-items: center; /* Vertically center images */
+    gap: 20px; /* Optional: space between images */
+    margin-top: 40px; /* Add space between this and previous elements */
+}
+
+.curly__hair {
+    width: 16.66vw;  /* 1/6th of the viewport width */
+    height: 16.66vw; /* same as width to make a square */
     border-radius: 50%;
-  }
+    overflow: hidden;
+    
+}
+
+.curly__hair img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+}
+
 
 
 

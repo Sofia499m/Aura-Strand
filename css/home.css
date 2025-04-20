@@ -11,30 +11,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;            /* spacing between circles */
-    flex-wrap: wrap;      /* lets them wrap if the screen is small */
+    gap: 30px;            /* adjust spacing between circles*/
+    flex-wrap: wrap;      /* wrapping on smaller screens */
+    height: 80vh;         /* takes up 80% of the viewport height */
     padding: 20px;
-             
-}
-
-.slogan {
-    font-size: 20px;
-    color: var(--color-black);
 }
 
 .curly__hair {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0; /* prevents shrinking on small screen */
+    width: 16.6vw;          /* makes the circles 25% of the viewport width */
+    height: 16.6vw;         /* match height with width */
+    border-radius: 50%;   /* round edge */
+    overflow: hidden;     /* hides overflow */
+   
 }
 
 .curly__hair img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;    /* ensures images fill the circle without distortion */
+    display: block;
 }
+
+
 
 
 

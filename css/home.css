@@ -11,15 +11,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;            /* adjust spacing between circles*/
+    gap: 80px;            /* adjust spacing between circles*/
     flex-wrap: wrap;      /* wrapping on smaller screens */
     height: 80vh;         /* takes up 80% of the viewport height */
-    padding: 20px;
+    padding: 10px;
 }
 
 .curly__hair {
-    width: 16.6vw;          /* makes the circles 25% of the viewport width */
-    height: 16.6vw;         /* match height with width */
+    width: 18vw;          /* makes the circles 25% of the viewport width */
+    height: 18vw;         /* match height with width */
     border-radius: 50%;   /* round edge */
     overflow: hidden;     /* hides overflow */
    

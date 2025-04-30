@@ -1,183 +1,206 @@
-<!Doctype html> 
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/shop.css">
-        <link rel="stylesheet" href="/css/BarMenu.css">
-        <link rel="stylesheet" href="/css/cart.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <title>Aura&Strand</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Macondo+Swash+Caps&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sacramento&family=Sigmar+One&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Macondo+Swash+Caps&family=Markazi+Text:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sacramento&family=Sigmar+One&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    <body class="showCart">
-        <div class="menu__bar">
-            <ul class="menu__items">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura&Strand</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/shop.css">
+    <link rel="stylesheet" href="/css/BarMenu.css">
+    <link rel="stylesheet" href="/css/cart.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Macondo+Swash+Caps&family=Markazi+Text:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sacramento&family=Sigmar+One&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="showCart">
+
+    <!-- Navigation Bar -->
+    <div class="menu__bar">
+        <ul class="menu__items">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">Review</a></li>
             <li><a href="#">Contact</a></li>
-            </ul>
+        </ul>
 
-            <div class="icons">
-                <ul class="icon__items">
-                    <li><a href="#" class="fas fa-heart"></a></li>
-                    <li><a href="#" class="fas fa-shopping-cart"></a></li>
-                    <li><a href="#" class="fas fa-user"></a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <!--hair mask display product-->
-        <div class="Products_countainer">
-            <div class="spaces"></div>
-            <div class="title">
-                <h1>Hair Masks</h1>
-            </div>
-            <div id="product">
-                <img src="/css/images/curlsHairMask.png" class="img1">
-                <h4>L'Oréal Paris Elvive Dream Lengths 3-in-1 Curls Hydration Mask</h4>
-                <p>€7.45<p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/wavy hair mask.webp" class="img1">
-                <h4>Function of Beauty PRO</h4><br>
-                <p>€28</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/StraightHairMask.webp" class="img1">
-                <h4>Gisou Honey Gloss Ceramide Therapy Hair Mask</h4>
-                <p>€21.47</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/nutritiveHairMask.png" class="img1">
-                <h4>Kérastase Nutritive Masquintense Riche Deep Nutrition Rich Mask</h4>
-                <p>€39.95</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-        </div>
-
-        <!--hair oil display product-->
-        <div class="Products_countainer">
-            <div class="spaces"></div>
-            <div class="title">
-                <h1>Hair Oils</h1>
-            </div>
-            <div id="product">
-                <img src="/css/images/oilGrowth.jpeg" class="img1">
-                <h4>Cantu Biotin-Biotin Infuse hair & scalp</h4><br>
-                <p>€11.99</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/oilDry.webp" class="img1">
-                <h4>L'Oréal Paris Hair Oil By Elvive Extraordinary oil for Dry hair</h4>
-                <p>€10.69</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/oilFrizzy.jpeg" class="img1">
-                <h4>Kerastase Oleo-Relax Morpho Huile </h4><br>
-                <p>€57</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/oilEnds.png" class="img1">
-                <h4>Olaplex No.7 Bonding Oil</h4><br>
-                <p>€24.57</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-        </div>
-
-        <!--hair Shampoo display product-->
-        <div class="Products_countainer">
-            <div class="spaces"></div>
-            <div class="title">
-                <h1>Shampoos</h1>
-            </div>
-            <div id="product">
-                <img src="/css/images/CurlsShampoo.png" class="img1">
-                <h4>Alfaparf Milano Semi Di Lino Curls Enhancing Low Shampoo 250ml</h4>
-                <p>€12.78</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/StraightShampoo.jpeg" class="img1">
-                <h4>L'Oréal Paris Elvive Glycolic Gloss shampoo</h4><br>
-                <p>€28.77</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/OilyShampoo.png" class="img1">
-                <h4>Active Shampoo A2 For Oily hair </h4><br>
-                <p>€5.57</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/DryShampoo.png" class="img1">
-                <h4>Derma Pro Scalp Care Quenching Hydration</h4><br>
-                <p>€6.99</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-        </div>
-        <!--hair Conditioner display product-->
-        <div class="Products_countainer">
-            <div class="spaces"></div>
-            <div class="title">
-                <h1>Conditiones</h1>
-            </div>
-            <div id="product">
-                <img src="/css/images/Conditioner1.webp" class="img1">
-                <h4>Alfaparf Milano Semi Di Lino Curls Enhancing Low conditioner</h4>
-                <p>€13.99</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/Conditioner2.webp" class="img1">
-                <h4>L'Oréal Paris Elvive Glycolic Gloss conditioner</h4>
-                <p>€28.77</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/oat_conditioner.png" class="img1">
-                <h4>Oat Milk Blend Conditioner</h4><br>
-                <p>€5.97</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-            <div id="product">
-                <img src="/css/images/dryConditioner.png" class="img1">
-                <h4>Garnier Ultimate Blends Coconut Milk Dry Hair Conditioner 360ml</h4>
-                <p>€5.99</p>
-                <button class="addcart"><h2>Add To Car</h2></button>
-            </div>
-        <div class="cartTap">
-            <h1>Shopping Cart</h1>
-            <div class="listProducts">  
-                <div class="items">
-                    <div class="image"><img src="/css/images/curlsHairMask.png"></div>
-                    <div class="name">L'Oréal Paris Elvive Dream Lengths 3-in-1 Curls Hydration Mask</div>
-                    <div class="Total Price">€7.45</div>
-                    <div class="quantity">
-                        <span class="minus">&lt;</span>
-                        <span class="num">1</span>
-                        <span class="plus">></span>
+        <div class="icons">
+            <ul class="icon__items">
+                <li><a href="#" class="fas fa-heart"></a></li>
+                <li>
+                    <div class="icon-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>0</span>
                     </div>
+                </li>
+                <li><a href="#" class="fas fa-user"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product Sections -->
+    <!-- Example Block Repeated for Each Category -->
+    <div class="Products_countainer">
+        <div class="spaces"></div>
+        <div class="title"><h1>Hair Masks</h1></div>
+
+        <div class="product" data-id="1">
+            <img src="/css/images/curlsHairMask.png" class="img1">
+            <h4>L'Oréal Paris Elvive Dream Lengths 3-in-1 Curls Hydration Mask</h4>
+            <p>€7.45</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="2">
+            <img src="/css/images/wavy hair mask.webp" class="img1">
+            <h4>Function of Beauty PRO</h4>
+            <p>€28</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="3">
+            <img src="/css/images/StraightHairMask.webp" class="img1">
+            <h4>Gisou Honey Gloss Ceramide Therapy Hair Mask</h4>
+            <p>€21.47</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="4">
+            <img src="/css/images/nutritiveHairMask.png" class="img1">
+            <h4>Kérastase Nutritive Masquintense Riche Deep Nutrition Rich Mask</h4>
+            <p>€39.95</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+    </div>
+    <!-- Hair Oils -->
+    <div class="Products_countainer">
+        <div class="spaces"></div>
+        <div class="title"><h1>Hair Oils</h1></div>
+
+        <div class="product" data-id="1">
+            <img src="/css/images/oilGrowth.jpeg" class="img1">
+            <h4>Cantu Biotin-Biotin Infuse Hair & Scalp</h4>
+            <p>€11.99</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="2">
+            <img src="/css/images/oilDry.webp" class="img1">
+            <h4>L'Oréal Paris Hair Oil Elvive Extraordinary for Dry Hair</h4>
+            <p>€10.69</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="3">
+            <img src="/css/images/oilFrizzy.jpeg" class="img1">
+            <h4>Kerastase Oleo-Relax Morpho Huile</h4>
+            <p>€57</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="4">
+            <img src="/css/images/oilEnds.png" class="img1">
+            <h4>Olaplex No.7 Bonding Oil</h4>
+            <p>€24.57</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+    </div>
+
+    <!-- Shampoos -->
+    <div class="Products_countainer">
+        <div class="spaces"></div>
+        <div class="title"><h1>Shampoos</h1></div>
+
+        <div class="product" data-id="9">
+            <img src="/css/images/CurlsShampoo.png" class="img1">
+            <h4>Alfaparf Milano Semi Di Lino Curls Enhancing Low Shampoo 250ml</h4>
+            <p>€12.78</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="10">
+            <img src="/css/images/StraightShampoo.jpeg" class="img1">
+            <h4>L'Oréal Paris Elvive Glycolic Gloss Shampoo</h4>
+            <p>€28.77</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="11">
+            <img src="/css/images/OilyShampoo.png" class="img1">
+            <h4>Active Shampoo A2 For Oily Hair</h4>
+            <p>€5.57</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="12">
+            <img src="/css/images/DryShampoo.png" class="img1">
+            <h4>Derma Pro Scalp Care Quenching Hydration</h4>
+            <p>€6.99</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+    </div>
+
+    <!-- Conditioners -->
+    <div class="Products_countainer">
+        <div class="spaces"></div>
+        <div class="title"><h1>Conditioners</h1></div>
+
+        <div class="product" data-id="13">
+            <img src="/css/images/Conditioner1.webp" class="img1">
+            <h4>Alfaparf Milano Semi Di Lino Curls Enhancing Conditioner</h4>
+            <p>€13.99</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="14">
+            <img src="/css/images/Conditioner2.webp" class="img1">
+            <h4>L'Oréal Paris Elvive Glycolic Gloss Conditioner</h4>
+            <p>€28.77</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="15">
+            <img src="/css/images/oat_conditioner.png" class="img1">
+            <h4>Oat Milk Blend Conditioner</h4>
+            <p>€5.97</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+
+        <div class="product" data-id="16">
+            <img src="/css/images/dryConditioner.png" class="img1">
+            <h4>Garnier Ultimate Blends Coconut Milk Dry Hair Conditioner 360ml</h4>
+            <p>€5.99</p>
+            <button class="addcart"><h2>Add To Cart</h2></button>
+        </div>
+    </div>
+    <!-- Shopping Cart -->
+    <div class="cartTap">
+        <h1>Shopping Cart</h1>
+        <div class="listProducts">
+            <div class="items">
+                <div class="image"><img src="/css/images/curlsHairMask.png" alt="Product"></div>
+                <div class="name">L'Oréal Paris Elvive Dream Lengths 3-in-1 Curls Hydration Mask</div>
+                <div class="Total Price">€7.45</div>
+                <div class="quantity">
+                    <span class="minus">&lt;</span>
+                    <span class="num">1</span>
+                    <span class="plus">&gt;</span>
                 </div>
             </div>
-                <div class="buttons">
-                    <button class="close">Close</button>
-                    <button>Purchase</button>
-                </div>
         </div>
-    </body>
+        <div class="buttons">
+            <button class="close">Close</button>
+            <button>Purchase</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script src="/js/Car.js"></script>
+</body>
 </html>

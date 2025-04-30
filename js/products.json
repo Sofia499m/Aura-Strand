@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "LD01 L'Oréal Paris Elvive Dream Lengths 3-in-1 Curls Hydration Mask",
+        "price": 7.45,
+        "image": "/css/images/curlsHairMask.png"
+    },
+    {
+        "id": 2,
+        "name": "LD02 Function of Beauty PRO",
+        "price": 28,
+        "image": "/css/images/wavy hair mask.webp"
+    },
+    {
+        "id": 3,
+        "name": "LD03 Gisou Honey Gloss Ceramide Therapy Hair Mask",
+        "price": 21.47,
+        "image": "/css/images/StraightHairMask.webp"
+    },
+    {
+        "id": 4,
+        "name": "LD04 Kérastase Nutritive Masquintense Riche Deep Nutrition Rich Mask",
+        "price": 39.95,
+        "image": "/css/images/nutritiveHairMask.png"
+    },
+    {
+        "id": 5,
+        "name": "LD05 Cantu Biotin-Biotin Infuse hair & scalp",
+        "price": 11.99,
+        "image": "/css/images/oilGrowth.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "LD06 L'Oréal Paris Hair Oil By Elvive Extraordinary oil for Dry hair",
+        "price": 10.69,
+        "image": "/css/images/oilDry.webp"
+    },
+    {
+        "id": 7,
+        "name": "LD07 Kerastase Oleo-Relax Morpho Huile",
+        "price": 57,
+        "image": "/css/images/oilFrizzy.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "LD08 Olaplex No.7 Bonding Oil",
+        "price": 24.57,
+        "image": "/css/images/oilEnds.png"
+    },
+    {
+        "id": 9,
+        "name": "LD09 Alfaparf Milano Semi Di Lino Curls Enhancing Low Shampoo 250ml",
+        "price": 12.78,
+        "image": "/css/images/CurlsShampoo.png"
+    },
+    {
+        "id": 10,
+        "name": "LD010 L'Oréal Paris Elvive Glycolic Gloss shampoo",
+        "price": 28.77,
+        "image": "/css/images/StraightShampoo.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "LD011 Active Shampoo A2 For Oily hair",
+        "price": 5.57,
+        "image": "/css/images/OilyShampoo.png"
+    },
+    {
+        "id": 12,
+        "name": "LD012 Derma Pro Scalp Care Quenching Hydration",
+        "price": 6.99,
+        "image": "/css/images/DryShampoo.png"
+    },
+    {
+        "id": 13,
+        "name": "LD013 Alfaparf Milano Semi Di Lino Curls Enhancing Low conditioner",
+        "price": 13.99,
+        "image": "/css/images/Conditioner1.webp"
+    },
+    {
+        "id": 14,
+        "name": "LD014 L'Oréal Paris Elvive Glycolic Gloss conditioner",
+        "price": 28.77,
+        "image": "/css/images/Conditioner2.webp"
+    },
+    {
+        "id": 15,
+        "name": "LD015 Oat Milk Blend Conditioner",
+        "price": 5.97,
+        "image": "/css/images/oat_conditioner.png"
+    },
+    {
+        "id": 16,
+        "name": "LD016 Garnier Ultimate Blends Coconut Milk Dry Hair Conditioner 360ml",
+        "price": 5.99,
+        "image": "/css/images/dryConditioner.png"
+    }
+]

@@ -157,10 +157,17 @@ const addDataToHTML = () => {
             newProduct.classList.add('product');
             newProduct.dataset.id = product.id;
             newProduct.innerHTML = `
+                <div class="product-img-wrapper">
                 <img src="${product.image}" class="img1">
+                <div class="likes">
+                    <a class="fas fa-heart"></a>
+                </div>
+            </div>
                 <h4>${product.name}</h4>
+                <div class="product-Detiles">
                 <p>€${product.price.toFixed(2)}</p>
                 <button class="addcart"><h2>Add To Cart</h2></button>
+                </divß>
             `;
             productContainer.appendChild(newProduct);
         });

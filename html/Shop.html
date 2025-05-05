@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/shop.css">
     <link rel="stylesheet" href="/css/BarMenu.css">
     <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/RatingProducts.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -50,32 +51,19 @@
         <div class="title"><h1></h1></div>
 
         <div class="product">
-            <img src="" class="img1">
-            <h4></h4>
-            <div><p></p></div>
+            <div class="product-img-wrapper">
+                <img src="" class="img1">
+                <div class="likes">
+                    <a class="fas fa-heart"></a>
+                </div>
+            </div>
+            <h4>Product Title</h4>
+            <div class="product-Detiles">
+            <p>€Price</p>
             <button class="addcart"><h2>Add To Cart</h2></button>
+            </div>
         </div>
 
-        <div class="product">
-            <img src="" class="img1">
-            <h4></h4>
-            <p></p>
-            <button class="addcart"><h2>Add To Cart</h2></button>
-        </div>
-
-        <div class="product">
-            <img src="" class="img1">
-            <h4></h4>
-            <p></p>
-            <button class="addcart"><h2>Add To Cart</h2></button>
-        </div>
-
-        <div class="product">
-            <img src="" class="img1">
-            <h4></h4>
-            <p></p>
-            <button class="addcart"><h2>Add To Cart</h2></button>
-        </div>
     </div>
     
     <!-- Shopping Cart -->
@@ -102,6 +90,18 @@
         </div>
     </div>
 
+    <!-- Likes Cart -->
+    <div class="Likes-Tap">
+        <h1>Products Rating</h1>
+        <div class="List-Products">
+            <div class="items-list">
+                <div class="image"></div>
+                <div class="name"></div>
+                <div class="total-likes"><a class="fas fa-heart">
+                    <span class="icon-cart-span">0</span>
+                </a></div>
+            </div>
+        </div>
     <!-- JavaScript -->
     <script src="/js/Cart.js"></script>
 </body>

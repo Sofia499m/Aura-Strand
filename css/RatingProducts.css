@@ -1,0 +1,11 @@
+.Likes-Tap{
+    width: 400px;
+    background-color: rgb(199, 135, 79);
+    color: white;
+    display: grid;
+    grid-template-rows:  70px 1fr 70px 70px;
+    position:fixed;
+    inset: 0 0 0 auto;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+}

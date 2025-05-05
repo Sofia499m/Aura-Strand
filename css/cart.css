@@ -74,3 +74,8 @@
 .showCart .cartTap{
     transform: translateX(0);
 }
+/*Span*/
+span{
+    color:white;
+    font-size: 13px;
+}

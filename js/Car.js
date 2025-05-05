@@ -5,12 +5,7 @@ let listProductHTML = document.querySelector('.Products_countainer');
 let listCartHTML = document.querySelector('.listProducts');
 let iconCartSpan = document.querySelector('.icon-cart-span');
 
-let titleProduct = [
-    { title: "Hair Mask" },
-    { title: "Hair Oils" },
-    { title: "Shampoo" },
-    { title: "Conditioner" }
-];
+
 
 let listProducts = [
     {

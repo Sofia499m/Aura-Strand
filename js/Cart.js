@@ -1,5 +1,6 @@
 let iconCart = document.querySelector('.fa-shopping-cart');
 let closeCart = document.querySelector('.close');
+let purchaseBtn = document.querySelector('.Purchase');
 let body = document.querySelector('body');
 let listProductHTML = document.querySelector('.Products_countainer');
 let listCartHTML = document.querySelector('.listProducts');
@@ -146,12 +147,12 @@ const addDataToHTML = () => {
         newTitle.innerHTML = `<div class="title"><h1>${titleObje.title}</h1></div>`;
         listProductHTML.appendChild(newTitle);
 
-        let filterProdusct=listProducts.filter(product => product.category === titleObje.title);
+        let filterProduct=listProducts.filter(product => product.category === titleObje.title);
 
         let productContainer = document.createElement('div');
         productContainer.classList.add('product-category');
         
-        filterProdusct.forEach(product => {
+        filterProduct.forEach(product => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('product');
             newProduct.dataset.id = product.id;
@@ -209,10 +210,9 @@ const addCartToHTML = () => {
             listCartHTML.appendChild(newCart);
         });
     }
-
     // Update cart counter
-    let iconCartSpan = document.querySelector('.icon-cart-span');
     iconCartSpan.innerText = carts.reduce((total, item) => total + item.quantity, 0);
+    calculateTotal();
 };
 
 listCartHTML.addEventListener('click', (event) => {
@@ -222,7 +222,7 @@ listCartHTML.addEventListener('click', (event) => {
     } else if (event.target.classList.contains('minus')) {
         let id = parseInt(event.target.dataset.id);
         changeQuantity(id, -1);
-    }
+    } 
 });
 
 const changeQuantity = (product_id, change) => {
@@ -234,6 +234,29 @@ const changeQuantity = (product_id, change) => {
         }
         addCartToHTML(); 
     }
+};
+
+purchaseBtn.addEventListener('click', () => {
+    if (carts.length === 0) {
+        alert('Your cart is empty!');
+        return;
+    }
+    // Simulate purchase
+    alert('Thank you for your purchase!');
+
+    // Clear cart
+    carts = [];
+    addCartToHTML();
+    body.classList.remove('showCart'); // Close cart
+});
+
+const calculateTotal = () => {
+    let total = 0;
+    carts.forEach(cart => {
+    let product = listProducts.find(p => p.id === cart.product_id);
+      total += product.price * cart.quantity;
+    });
+    document.querySelector('.cart-total-price').innerText = total.toFixed(2);
 };
 
 addDataToHTML();

@@ -4,7 +4,7 @@
     background-color: rgb(199, 135, 79);
     color: white;
     display: grid;
-    grid-template-rows:  70px 1fr 70px;
+    grid-template-rows:  70px 1fr 70px 70px;
     position:fixed;
     inset: 0 0 0 auto;
     transform: translateX(100%);
@@ -74,8 +74,13 @@
 .showCart .cartTap{
     transform: translateX(0);
 }
-/*Span*/
+/*cart items quantity*/
 span{
     color:white;
     font-size: 13px;
 }
+/*Total price of items*/
+.cart-total-price {
+    font-size: large;
+}
+

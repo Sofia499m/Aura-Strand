@@ -57,4 +57,16 @@ body {
     transform: translateY(-50%);
     font-size: 20px;
  }
+
+ .wrapper .remember_forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px
+    margin: -15pxpx 0 15px;
+ }
+
+.remember_forgot label {
+        accent-colour: #fff;
+        margin-right: 3px;
+}
  

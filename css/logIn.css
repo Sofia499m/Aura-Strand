@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -10,13 +10,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: peachpuff;
+    background: seagreen;
 }
 
 .wrapper {
     width: 420px;
-    background: pink;
-    color:#fff;
+    background: purple;
+    color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
 }
@@ -26,56 +26,57 @@ body {
     font-size: 36px;
 }
 
-.wrapper .input_Box {
+.input_Box {
+    position: relative;
     width: 100%;
     height: 50px;
-    background: salmon
+    background: salmon;
     margin: 30px 0;
 }
 
 .input_Box input {
-        width: 100%;
-        height: 100%;
-        border: none;
-        outline: none;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        border-radius: 40px;
-        background: transparent;
-        font-size: 16px;
-        color: #fff;
-        padding: 20px 45px 20px 20px;
- }
-
- .input_Box input::placeholder {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    background: transparent;
+    font-size: 16px;
     color: #fff;
- }
+    padding: 20px 45px 20px 20px;
+}
 
- .input_Box i{
+.input_Box input::placeholder {
+    color: #fff;
+}
+
+.input_Box i {
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
     font-size: 20px;
- }
-
- .wrapper .remember_forgot {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px
-    margin: -15pxpx 0 15px;
- }
-
-.remember_forgot label {
-        accent-colour: #fff;
-        margin-right: 3px;
 }
 
-.remember_forgot a {
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
     color: #fff;
     text-decoration: none;
 }
 
-.remember_forgot a:hover {
+.remember-forgot a:hover {
     text-decoration: underline;
 }
 
@@ -84,7 +85,7 @@ body {
     height: 50px;
     background: #fff;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0 , 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: none;
     outline: none;
     font-size: 18px;
@@ -93,19 +94,20 @@ body {
     cursor: pointer;
 }
 
-.wrapper .login_register {
+.wrapper .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
 }
 
-.login_register p a {
+.register-link p a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
 
-.login_register p a:hover {
+.register-link p a:hover {
     text-decoration: underline;
 }
+
  

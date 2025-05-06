@@ -9,6 +9,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/css/BarMenu.css">
   <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/cart.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- Google Fonts -->
@@ -30,12 +31,15 @@
     
     <div class="icons">
       <ul class="icon__items">
-        <li><a href="#"><i class="fas fa-heart"></i></a></li>
-        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-        <li><a href="#"><i class="fas fa-user"></i></a></li>
+          <li class="icon-cart">
+              <a href="#"><i class="fas fa-shopping-cart">
+                  <span class="icon-cart-span">0</span>
+              </i></a>
+          </li>
+          <li><a href="#" class="fas fa-user"></a></li>
       </ul>
-    </div>
   </div>
+</div>
 
   <!-- Main Banner Image -->
   <img src="/css/images/background3.webp" alt="Hair Blowing in Wind" class="hair__blowing" /> 
@@ -61,5 +65,30 @@
       </div>
     </div> 
   </div>
+  <!-- Shopping Cart -->
+  <div class="cartTap">
+    <h1>Shopping Cart</h1>
+    <div class="listProducts">
+        <div class="items">
+            <div class="image"></div>
+            <div class="name"></div>
+            <div class="Total Price"></div>
+            <div class="quantity">
+                <span class="minus"></span>
+                <span class="num"></span>
+                <span class="plus"></span>
+            </div>
+        </div>
+    </div>
+    <div class = "cart-total">
+        <h3>Total: €<span class="cart-total-price">0</span></h3>
+    </div>
+    <div class="buttons">
+        <button class="close">Close</button>
+        <button class="Purchase">Purchase</button>
+    </div>
+</div>
+  <!-- JavaScript -->
+  <script src="/js/Cart.js"></script>
 </body>
 </html>

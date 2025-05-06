@@ -18,112 +18,112 @@ let listProducts = [
         "id": 1,
         "name": "L'Oréal Paris Elvive Dream Lengths 3-in-1 Curls Hydration Mask",
         "price": 7.45,
-        "image": "/css/images/curlsHairMask.png",
+        "image": "/Aura-Strand/css/images/curlsHairMask.png",
         "category": "Hair Mask"
     },
     {
         "id": 2,
         "name": "Function of Beauty PRO",
         "price": 28,
-        "image": "/css/images/wavy hair mask.webp",
+        "image": "/Aura-Strand/css/images/wavy hair mask.webp",
         "category": "Hair Mask"
     },
     {
         "id": 3,
         "name": "Gisou Honey Gloss Ceramide Therapy Hair Mask",
         "price": 21.47,
-        "image": "/css/images/StraightHairMask.webp",
+        "image": "/Aura-Strand/css/images/StraightHairMask.webp",
         "category": "Hair Mask"
     },
     {
         "id": 4,
         "name": "Kérastase Nutritive Masquintense Riche Deep Nutrition Rich Mask",
         "price": 39.95,
-        "image": "/css/images/nutritiveHairMask.png",
+        "image": "/Aura-Strand/css/images/nutritiveHairMask.png",
         "category": "Hair Mask"
     },
     {
         "id": 5,
         "name": "Cantu Biotin-Biotin Infuse hair & scalp",
         "price": 11.99,
-        "image": "/css/images/oilGrowth.jpeg",
+        "image": "/Aura-Strand/css/images/oilGrowth.jpeg",
         "category": "Hair Oils"
     },
     {
         "id": 6,
         "name": "L'Oréal Paris Hair Oil By Elvive Extraordinary oil for Dry hair",
         "price": 10.69,
-        "image": "/css/images/oilDry.webp",
+        "image": "/Aura-Strand/css/images/oilDry.webp",
         "category": "Hair Oils"
     },
     {
         "id": 7,
         "name": "Kerastase Oleo-Relax Morpho Huile",
         "price": 57,
-        "image": "/css/images/oilFrizzy.jpeg",
+        "image": "/Aura-Strand/css/images/oilFrizzy.jpeg",
         "category": "Hair Oils"
     },
     {
         "id": 8,
         "name": "Olaplex No.7 Bonding Oil",
         "price": 24.57,
-        "image": "/css/images/oilEnds.png",
+        "image": "/Aura-Strand/css/images/oilEnds.png",
         "category": "Hair Oils"
     },
     {
         "id": 9,
         "name": "Alfaparf Milano Semi Di Lino Curls Enhancing Low Shampoo 250ml",
         "price": 12.78,
-        "image": "/css/images/CurlsShampoo.png",
+        "image": "/Aura-Strand/css/images/CurlsShampoo.png",
         "category": "Shampoo"
     },
     {
         "id": 10,
         "name": "L'Oréal Paris Elvive Glycolic Gloss shampoo",
         "price": 28.77,
-        "image": "/css/images/StraightShampoo.jpeg",
+        "image": "/Aura-Strand/css/images/StraightShampoo.jpeg",
         "category": "Shampoo"
     },
     {
         "id": 11,
         "name": "Active Shampoo A2 For Oily hair",
         "price": 5.57,
-        "image": "/css/images/OilyShampoo.png",
+        "image": "/Aura-Strand/css/images/OilyShampoo.png",
         "category": "Shampoo"
     },
     {
         "id": 12,
         "name": "Derma Pro Scalp Care Quenching Hydration",
         "price": 6.99,
-        "image": "/css/images/DryShampoo.png",
+        "image": "/Aura-Strand/css/images/DryShampoo.png",
         "category": "Shampoo"
     },
     {
         "id": 13,
         "name": "Alfaparf Milano Semi Di Lino Curls Enhancing Low conditioner",
         "price": 13.99,
-        "image": "/css/images/Conditioner1.webp",
+        "image": "/Aura-Strand/css/images/Conditioner1.webp",
         "category": "Conditioner"
     },
     {
         "id": 14,
         "name": "L'Oréal Paris Elvive Glycolic Gloss conditioner",
         "price": 28.77,
-        "image": "/css/images/Conditioner2.webp",
+        "image": "/Aura-Strand/css/images/Conditioner2.webp",
         "category": "Conditioner"
     },
     {
         "id": 15,
         "name": "Oat Milk Blend Conditioner",
         "price": 5.97,
-        "image": "/css/images/oat_conditioner.png",
+        "image": "/Aura-Strand/css/images/oat_conditioner.png",
         "category": "Conditioner"
     },
     {
         "id": 16,
         "name": "Garnier Ultimate Blends Coconut Milk Dry Hair Conditioner 360ml",
         "price": 5.99,
-        "image": "/css/images/dryConditioner.png",
+        "image": "/Aura-Strand/css/images/dryConditioner.png",
         "category": "Conditioner"
     }
 ];

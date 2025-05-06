@@ -6,7 +6,7 @@ section{
 .home{
     display:flex;
     align-items: center;
-    min-height: 94vh;
+    min-height: 85vh;
     background: url(/css/images/background2.avif) no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,19 +42,19 @@ section{
     color: #333;
 }
 /*CONTACT MESAGE*/
-.contact .row{
+.message .row{
     display:flex;
     flex-wrap: wrap;
     gap: 1.5em;
 }
-.contact .row form{
+.message .row form{
     flex: 1 1 40rem; 
     padding: 2rem 2.5rem;
     box-shadow:.3rem .1rem rgba(0,0,0,0.5); 
     background-color: rgba(255, 255, 255, 0.5);  ;
     border-radius: .5rem ;
 }
-.contact .row form .box{
+.message .row form .box{
     padding: 1rem;
     font-size: 1.7rem;
     color: #333;
@@ -64,14 +64,14 @@ section{
     margin: .7rem 0 ;
     width: 100%;
 }
-.contact .row form .box:focus{
+.message .row form .box:focus{
     border-color: rgb(236, 164, 101);
 }
-.contact .row form textarea{
+.message .row form textarea{
     height: 15rem;
     resize: none;
 }
-.contact .row form .btn{
+.message .row form .btn{
     background-color: #333;
     color: white;
     width: 13rem;
@@ -82,3 +82,14 @@ section{
     font-family: "Markazi Text", serif;
     font-size: 1.7rem;
 }
+.footPage{
+    background-color: peachpuff;
+}
+.footPage .contact_detils{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: .5%;
+    font-size: large;
+}
+

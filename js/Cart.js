@@ -290,5 +290,4 @@ document.addEventListener('click', (event) => {
         likeCountSpan.textContent = likeCount[productId]; 
     }
 });
-
 addDataToHTML();

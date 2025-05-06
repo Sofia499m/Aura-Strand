@@ -16,112 +16,112 @@ let titleProduct = [
 let listProducts = [
     {
         "id": 1,
-        "name": "LD01 L'Oréal Paris Elvive Dream Lengths 3-in-1 Curls Hydration Mask",
+        "name": "L'Oréal Paris Elvive Dream Lengths 3-in-1 Curls Hydration Mask",
         "price": 7.45,
         "image": "/css/images/curlsHairMask.png",
         "category": "Hair Mask"
     },
     {
         "id": 2,
-        "name": "LD02 Function of Beauty PRO",
+        "name": "Function of Beauty PRO",
         "price": 28,
         "image": "/css/images/wavy hair mask.webp",
         "category": "Hair Mask"
     },
     {
         "id": 3,
-        "name": "LD03 Gisou Honey Gloss Ceramide Therapy Hair Mask",
+        "name": "Gisou Honey Gloss Ceramide Therapy Hair Mask",
         "price": 21.47,
         "image": "/css/images/StraightHairMask.webp",
         "category": "Hair Mask"
     },
     {
         "id": 4,
-        "name": "LD04 Kérastase Nutritive Masquintense Riche Deep Nutrition Rich Mask",
+        "name": "Kérastase Nutritive Masquintense Riche Deep Nutrition Rich Mask",
         "price": 39.95,
         "image": "/css/images/nutritiveHairMask.png",
         "category": "Hair Mask"
     },
     {
         "id": 5,
-        "name": "LD05 Cantu Biotin-Biotin Infuse hair & scalp",
+        "name": "Cantu Biotin-Biotin Infuse hair & scalp",
         "price": 11.99,
         "image": "/css/images/oilGrowth.jpeg",
         "category": "Hair Oils"
     },
     {
         "id": 6,
-        "name": "LD06 L'Oréal Paris Hair Oil By Elvive Extraordinary oil for Dry hair",
+        "name": "L'Oréal Paris Hair Oil By Elvive Extraordinary oil for Dry hair",
         "price": 10.69,
         "image": "/css/images/oilDry.webp",
         "category": "Hair Oils"
     },
     {
         "id": 7,
-        "name": "LD07 Kerastase Oleo-Relax Morpho Huile",
+        "name": "Kerastase Oleo-Relax Morpho Huile",
         "price": 57,
         "image": "/css/images/oilFrizzy.jpeg",
         "category": "Hair Oils"
     },
     {
         "id": 8,
-        "name": "LD08 Olaplex No.7 Bonding Oil",
+        "name": "Olaplex No.7 Bonding Oil",
         "price": 24.57,
         "image": "/css/images/oilEnds.png",
         "category": "Hair Oils"
     },
     {
         "id": 9,
-        "name": "LD09 Alfaparf Milano Semi Di Lino Curls Enhancing Low Shampoo 250ml",
+        "name": "Alfaparf Milano Semi Di Lino Curls Enhancing Low Shampoo 250ml",
         "price": 12.78,
         "image": "/css/images/CurlsShampoo.png",
         "category": "Shampoo"
     },
     {
         "id": 10,
-        "name": "LD010 L'Oréal Paris Elvive Glycolic Gloss shampoo",
+        "name": "L'Oréal Paris Elvive Glycolic Gloss shampoo",
         "price": 28.77,
         "image": "/css/images/StraightShampoo.jpeg",
         "category": "Shampoo"
     },
     {
         "id": 11,
-        "name": "LD011 Active Shampoo A2 For Oily hair",
+        "name": "Active Shampoo A2 For Oily hair",
         "price": 5.57,
         "image": "/css/images/OilyShampoo.png",
         "category": "Shampoo"
     },
     {
         "id": 12,
-        "name": "LD012 Derma Pro Scalp Care Quenching Hydration",
+        "name": "Derma Pro Scalp Care Quenching Hydration",
         "price": 6.99,
         "image": "/css/images/DryShampoo.png",
         "category": "Shampoo"
     },
     {
         "id": 13,
-        "name": "LD013 Alfaparf Milano Semi Di Lino Curls Enhancing Low conditioner",
+        "name": "Alfaparf Milano Semi Di Lino Curls Enhancing Low conditioner",
         "price": 13.99,
         "image": "/css/images/Conditioner1.webp",
         "category": "Conditioner"
     },
     {
         "id": 14,
-        "name": "LD014 L'Oréal Paris Elvive Glycolic Gloss conditioner",
+        "name": "L'Oréal Paris Elvive Glycolic Gloss conditioner",
         "price": 28.77,
         "image": "/css/images/Conditioner2.webp",
         "category": "Conditioner"
     },
     {
         "id": 15,
-        "name": "LD015 Oat Milk Blend Conditioner",
+        "name": "Oat Milk Blend Conditioner",
         "price": 5.97,
         "image": "/css/images/oat_conditioner.png",
         "category": "Conditioner"
     },
     {
         "id": 16,
-        "name": "LD016 Garnier Ultimate Blends Coconut Milk Dry Hair Conditioner 360ml",
+        "name": "Garnier Ultimate Blends Coconut Milk Dry Hair Conditioner 360ml",
         "price": 5.99,
         "image": "/css/images/dryConditioner.png",
         "category": "Conditioner"
@@ -130,6 +130,7 @@ let listProducts = [
 
 let carts = [];
 
+//open and closing cart tap
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 });
@@ -137,6 +138,7 @@ closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 });
 
+//add products to cart
 const addDataToHTML = () => {
     listProductHTML.innerHTML = '';
 
@@ -160,14 +162,16 @@ const addDataToHTML = () => {
                 <div class="product-img-wrapper">
                 <img src="${product.image}" class="img1">
                 <div class="likes">
-                    <a class="fas fa-heart"></a>
+                    <i class="fas fa-heart like-btn">
+                        <span class="icon-likes-span">${likeCount[product.id] || 0}</span>
+                    </i>
                 </div>
             </div>
                 <h4>${product.name}</h4>
                 <div class="product-Detiles">
                 <p>€${product.price.toFixed(2)}</p>
                 <button class="addcart"><h2>Add To Cart</h2></button>
-                </divß>
+                </div>
             `;
             productContainer.appendChild(newProduct);
         });
@@ -178,8 +182,9 @@ const addDataToHTML = () => {
 listProductHTML.addEventListener('click', (event) => {
     let button = event.target.closest('.addcart');
     if (button) {
-        let product_Element = button.parentElement.dataset.id;
-        let product_id = parseInt(product_Element);
+        // get the product div that contains data-id
+        let productElement = button.closest('.product');
+        let product_id = parseInt(productElement.dataset.id);
         addToCart(product_id);
     }
 });
@@ -219,9 +224,11 @@ const addCartToHTML = () => {
     }
     // Update cart counter
     iconCartSpan.innerText = carts.reduce((total, item) => total + item.quantity, 0);
+    //over all total
     calculateTotal();
 };
 
+// select quantity
 listCartHTML.addEventListener('click', (event) => {
     if (event.target.classList.contains('plus')) {
         let id = parseInt(event.target.dataset.id);
@@ -243,6 +250,7 @@ const changeQuantity = (product_id, change) => {
     }
 };
 
+//purchase botton event listener
 purchaseBtn.addEventListener('click', () => {
     if (carts.length === 0) {
         alert('Your cart is empty!');
@@ -257,6 +265,7 @@ purchaseBtn.addEventListener('click', () => {
     body.classList.remove('showCart'); // Close cart
 });
 
+//cart total price 
 const calculateTotal = () => {
     let total = 0;
     carts.forEach(cart => {
@@ -265,5 +274,21 @@ const calculateTotal = () => {
     });
     document.querySelector('.cart-total-price').innerText = total.toFixed(2);
 };
+
+// traking likes 
+const likeCount={};
+document.addEventListener('click', (event) => {
+    if (event.target.classList.contains('like-btn')){
+        const productElement = event.target.closest('.product');
+        const productId = parseInt(productElement.dataset.id);
+
+        if(!likeCount[productId]){
+            likeCount[productId]=0;
+        }
+        likeCount[productId] += 1;
+        const likeCountSpan = productElement.querySelector('.icon-likes-span') 
+        likeCountSpan.textContent = likeCount[productId]; 
+    }
+});
 
 addDataToHTML();

@@ -58,13 +58,21 @@ p{
 
 .likes {
     color: black;
-    font-size: 30px;
+    font-size: 18px;
     transition: transform 0.2s;
     cursor: pointer;
 }
 
 .likes :hover {
     transform: scale(1.2);
+    color: rgb(233, 131, 41);
+}
+.likes .icon-likes-span{
+    color:black;
+    font-size: 13px;
+}
+.icon-likes-span :hover {
+    transform: scale(1.0);
     color: rgb(233, 131, 41);
 }
 

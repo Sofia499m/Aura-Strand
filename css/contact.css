@@ -1,5 +1,6 @@
 section{
-    padding: 2rem 9%;
+    padding: 1rem 7%;
+
 }
 .home{
     display:flex;
@@ -32,4 +33,22 @@ section{
     color: #686767;
     padding: 1px 0;
     line-height: 1.5;
+}
+.contact .row{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+.contact .row form{
+    flex: 1 1 40rem; 
+    padding: 2rem 2.5rem;
+    box-shadow:.3rem .1rem rgba(0,0,0,0.5); 
+    background-color: rgba(255, 255, 255, 0.5);  ;
+    border-radius: .5rem ;
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
 }

@@ -1,33 +1,31 @@
 .hair__blowing {
     width: 100%;
-    height: 40vh;
+    height: 55vh;
     display: block;
     object-fit: cover;
-    /*add to avoid squish*/
-    
 }
 
 .hair__circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;            /* adjust spacing between circles*/
-    flex-wrap: wrap;      /* wrapping on smaller screens */
-    height: 80vh;         /* takes up 80% of the viewport height */
+    gap: 80px;            
+    flex-wrap: wrap;      
+    height: 80vh;         
     padding: 10px;
 }
 
 .curly__hair {
-    width: 18vw;          /* makes the circles 25% of the viewport width */
-    height: 18vw;         /* match height with width */
-    border-radius: 50%;   /* round edge */
-    overflow: hidden;     /* hides overflow */
+    width: 18vw;          
+    height: 18vw;         
+    border-radius: 50%;   
+    overflow: hidden;     
 }
 
 .curly__hair img {
     width: 100%;
     height: 100%;
-    object-fit: cover;    /* ensures images fill the circle without distortion */
+    object-fit: cover;    
     display: block;
 }
 

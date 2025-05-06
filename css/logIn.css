@@ -69,4 +69,13 @@ body {
         accent-colour: #fff;
         margin-right: 3px;
 }
+
+.remember_forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember_forgot a:hover {
+    text-decoration: underline;
+}
  

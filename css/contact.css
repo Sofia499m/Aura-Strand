@@ -2,10 +2,11 @@ section{
     padding: 1rem 7%;
 
 }
+/*TEXT*/
 .home{
     display:flex;
     align-items: center;
-    min-height: 100vh;
+    min-height: 94vh;
     background: url(/css/images/background2.avif) no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,6 +35,13 @@ section{
     padding: 1px 0;
     line-height: 1.5;
 }
+/*CONTACT HEADING*/
+.heading{
+    font-family: "Markazi Text", serif;
+    font-size: 2.8rem;
+    color: #333;
+}
+/*CONTACT MESAGE*/
 .contact .row{
     display:flex;
     flex-wrap: wrap;
@@ -50,5 +58,27 @@ section{
     padding: 1rem;
     font-size: 1.7rem;
     color: #333;
-    text-transform: none;
+    text-transform: none; 
+    border:.1rem solid rgba(0,0,0.1);
+    border-radius: .5rem;
+    margin: .7rem 0 ;
+    width: 100%;
+}
+.contact .row form .box:focus{
+    border-color: rgb(236, 164, 101);
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+.contact .row form .btn{
+    background-color: #333;
+    color: white;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 1.8rem;
+    border: none;
+    cursor: pointer;
+    font-family: "Markazi Text", serif;
+    font-size: 1.7rem;
 }

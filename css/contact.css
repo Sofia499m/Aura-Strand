@@ -1,0 +1,32 @@
+section{
+    padding: 2rem 9%;
+}
+.home{
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/css/images/background2.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50%;
+
+} 
+.home .content h3{
+    font-family: "Tangerine", cursive;
+    font-size: 6rem;
+    color: #333;
+}
+.home .content span{
+    font-size: 1.7rem;
+    color: rgb(255, 163, 83);
+    padding: 1px 0;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 1rem;
+    color: #686767;
+    padding: 1px 0;
+    line-height: 1.5;
+}

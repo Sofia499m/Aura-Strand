@@ -15,17 +15,20 @@ section{
 } 
 .home .content h3{
     font-family: "Tangerine", cursive;
-    font-size: 6rem;
+    font-size: 9rem;
     color: #333;
 }
 .home .content span{
-    font-size: 1.7rem;
+    font-family: "Markazi Text", serif;
+    font-size: 2.8rem;
     color: rgb(255, 163, 83);
     padding: 1px 0;
-    line-height: 1.5;
+    line-height: 1;
+
 }
 .home .content p{
-    font-size: 1rem;
+    font-family: "Markazi Text", serif;
+    font-size: 1.5rem;
     color: #686767;
     padding: 1px 0;
     line-height: 1.5;

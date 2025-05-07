@@ -2,6 +2,7 @@
 #space{
     height: 50px;
 }
+/* page heading */
 .heading{
     width: 90%;
     text-align: center;
@@ -35,15 +36,16 @@
     max-width: 100%;
     height: auto;
     display:block;
-    transition: 0.5 ease;
+    transition: 0.5 ease; /* duration and time to rotate */
     border-radius: 50%;
 }
-/* text */
+/* Information Container */
 .content{
     flex:1;/* item lenth */
     background-color: #eeeee6;
     padding: 20px;
 }
+/* Title text */
 .title{
     border-radius: 50%;
     width: 140px;
@@ -56,6 +58,7 @@
     font-family: "Tangerine", cursive;
     font-size: x-large;
 }
+/* Content text */
 p{
     font-size: x-large;
     font-family: "Markazi Text", serif;

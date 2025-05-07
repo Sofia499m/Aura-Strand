@@ -1,20 +1,10 @@
-:root {
-    --color-primary: #0073ff;
-    --color-white: #e9e9e9; 
-    --color-black: #141d28;
-    --color-black1: #212b38; 
-}
-
+/* Reset default browser styles and set consistent box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-family: sans-serif; 
-}
-/* Manu Bar css */
+/* Manu Bar container */
 .menu__bar {
     background-color: rgb(236, 164, 101);
     height: 80px;
@@ -24,7 +14,7 @@ body {
     justify-content: space-between;
     padding: 0 5%;
 }
-
+/* Icons Style*/
 .menu__items,
 .icon__items {
     list-style: none;
@@ -42,18 +32,17 @@ body {
     text-decoration: none;
     font-size: 20px;
 }
+/* Links Style */
 .menu__items li a{
     font-family: "Markazi Text", serif;
     font-size: 30px;
 }
-
-.menu__bar ul li a:hover,
-.icon__items li a:hover {
-    color: var(--color-black1);
-}
-
 .icon__items li:first-child {
     color: white;
     font-weight: bold;
 }
-  
+/* Hover color */
+.menu__bar ul li a:hover,
+.icon__items li a:hover {
+    color: #141d28;
+}

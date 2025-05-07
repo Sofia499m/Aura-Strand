@@ -51,3 +51,9 @@ body {
 .icon__items li a:hover {
     color: var(--color-black1);
 }
+
+.icon__items li:first-child {
+    color: white;
+    font-weight: bold;
+}
+  

@@ -1,5 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+.review {
+    min-height: 90vh; /* Fills the full visible screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /* Review Section - Full Width Background */
-.review{
+.review {
     width: 100%;
     background-color: #fff8f0;
     padding: 4rem 2rem;

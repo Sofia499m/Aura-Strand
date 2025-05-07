@@ -1,26 +1,98 @@
-.review .box-container .box .fa-quote-right {
-    position: inherit;
-    bottom:3rem; right:3rem;
-    font-size:6rem;
-    color:#eee;
+:root {
+    --pink: #e91e63;
 }
 
-.review .box-container .box .stars i {
-    color:var(--pink);
+.review {
+    background: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.review .heading {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+
+.review .heading span {
+    color: var(--pink);
+}
+
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review .box {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.review .box:hover {
+    transform: translateY(-5px);
+}
+
+.review .box .stars {
+    margin-bottom: 1rem;
+}
+
+.review .box .stars i {
+    color: var(--pink);
     font-size: 2rem;
-
 }
 
-.review .box-container .box p {
-    color: #999;
-    font-size:1.5rem;
-    padding top;
-
+.review .box p {
+    color: #666;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-.review .box-container .box .user {
+.review .box .user {
     display: flex;
     align-items: center;
-    padding-top: 2rem;
-
+    gap: 1rem;
 }
+
+.review .box .user img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box .user-info h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+    text-align: left;
+}
+
+.review .box .user-info span {
+    font-size: 1.2rem;
+    color: #999;
+    text-align: left;
+    display: block;
+}
+
+.review .box .fa-quote-right {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 6rem;
+    color: #eee;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+
+

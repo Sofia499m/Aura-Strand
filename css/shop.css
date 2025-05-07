@@ -1,8 +1,8 @@
 /*products*/
 .Products_countainer{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-row-gap: 30px;
+    grid-template-columns: repeat(4,1fr); /* 4 equal-width columns */
+    grid-row-gap: 30px;/*row space*/
     text-align: center;
     padding: 10px;
     width: 100%;
@@ -10,11 +10,12 @@
 /*Product Category*/
 .product-category {
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Auto adjusts columns, with a minimum width of 300px per column */
+    gap: 30px; /* Adds space between items */
     justify-content: flex-start;
     grid-column: 1 / -1;
 }
+/*title for all produts*/
 .title{
     grid-column: span 4;
     font-family: "Tangerine", cursive;

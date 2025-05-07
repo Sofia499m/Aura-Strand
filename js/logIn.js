@@ -14,16 +14,18 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Simulated login check
-    if (username === "admin" && password === "password123") {
+    const storedUser = JSON.parse(localStorage.getItem('user'));
+
+    if (storedUser && storedUser.username === username && storedUser.password === password) {
       alert("Login successful!");
-      // Redirect or further action can be added here
+      // Optionally redirect
       // window.location.href = "/html/Home.html";
     } else {
       alert("Invalid username or password.");
     }
   });
 });
+
 
   
 

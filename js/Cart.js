@@ -109,7 +109,7 @@ let listProducts = [
         "id": 14,
         "name": "L'Oréal Paris Elvive Glycolic Gloss conditioner",
         "price": 28.77,
-        "image": "css/images/Conditioner2.webp",
+        "image": "/css/images/Conditioner2.webp",
         "category": "Conditioner"
     },
     {

@@ -6,6 +6,7 @@ let listProductHTML = document.querySelector('.Products_countainer');
 let listCartHTML = document.querySelector('.listProducts');
 let iconCartSpan = document.querySelector('.icon-cart-span');
 
+// Products title array
 let titleProduct = [
     { title: "Hair Mask" },
     { title: "Hair Oils" },
@@ -13,6 +14,7 @@ let titleProduct = [
     { title: "Conditioner" }
 ];
 
+// Products array
 let listProducts = [
     {
         "id": 1,
@@ -128,9 +130,10 @@ let listProducts = [
     }
 ];
 
+// Cart array
 let carts = [];
 
-//open and closing cart tap
+// Open and closing cart tap
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 });
@@ -138,22 +141,24 @@ closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 });
 
-//add products to cart
+// Add products to cart
 const addDataToHTML = () => {
     listProductHTML.innerHTML = '';
 
     titleProduct.forEach(titleObje => {
-        //creat and append the title 
+        // Creat and append the title 
         let newTitle = document.createElement('div');
         newTitle.classList.add('title');
         newTitle.innerHTML = `<div class="title"><h1>${titleObje.title}</h1></div>`;
         listProductHTML.appendChild(newTitle);
 
+        // Filter products to their categoey
         let filterProduct=listProducts.filter(product => product.category === titleObje.title);
 
         let productContainer = document.createElement('div');
         productContainer.classList.add('product-category');
         
+        // Creat and append the products
         filterProduct.forEach(product => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('product');
@@ -179,16 +184,18 @@ const addDataToHTML = () => {
     });
 };
 
+// Add to cart click button event
 listProductHTML.addEventListener('click', (event) => {
     let button = event.target.closest('.addcart');
     if (button) {
-        // get the product div that contains data-id
+        // Get the product div that contains data-id
         let productElement = button.closest('.product');
         let product_id = parseInt(productElement.dataset.id);
         addToCart(product_id);
     }
 });
 
+// Adding product to cart
 const addToCart = (product_id) => {
     let position = carts.findIndex(item => item.product_id === product_id);
     if (position < 0) {
@@ -202,6 +209,7 @@ const addToCart = (product_id) => {
     addCartToHTML();
 };
 
+// Adding product to cart in HTML
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     if (carts.length > 0) {
@@ -224,11 +232,11 @@ const addCartToHTML = () => {
     }
     // Update cart counter
     iconCartSpan.innerText = carts.reduce((total, item) => total + item.quantity, 0);
-    //over all total
+    //Over all total
     calculateTotal();
 };
 
-// select quantity
+// Select product quantity
 listCartHTML.addEventListener('click', (event) => {
     if (event.target.classList.contains('plus')) {
         let id = parseInt(event.target.dataset.id);
@@ -239,6 +247,7 @@ listCartHTML.addEventListener('click', (event) => {
     } 
 });
 
+// Adding quantity to cart icon
 const changeQuantity = (product_id, change) => {
     let position = carts.findIndex(item => item.product_id === product_id);
     if (position >= 0) {
@@ -250,7 +259,7 @@ const changeQuantity = (product_id, change) => {
     }
 };
 
-//purchase botton event listener
+// Purchase botton event listener
 purchaseBtn.addEventListener('click', () => {
     if (carts.length === 0) {
         alert('Your cart is empty!');
@@ -265,7 +274,7 @@ purchaseBtn.addEventListener('click', () => {
     body.classList.remove('showCart'); // Close cart
 });
 
-//cart total price 
+// Cart total price 
 const calculateTotal = () => {
     let total = 0;
     carts.forEach(cart => {
@@ -275,7 +284,7 @@ const calculateTotal = () => {
     document.querySelector('.cart-total-price').innerText = total.toFixed(2);
 };
 
-// traking likes 
+// Traking likes 
 const likeCount={};
 document.addEventListener('click', (event) => {
     if (event.target.classList.contains('like-btn')){

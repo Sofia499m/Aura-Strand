@@ -1,0 +1,17 @@
+/*image heading*/
+.hair__blowing {
+    display:flex;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    background: url(/css/images/curlyhairtop.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+.hair__blowing h1{
+    font-size: 20vh;
+    color:aliceblue;
+    font-family: "Tangerine", cursive;
+}

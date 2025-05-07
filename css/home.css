@@ -31,19 +31,22 @@
     height: 30vh;         
     background-color: rgb(253, 239, 226);
 }
-
 .curly__hair {
     width: 15vw;          
     height: 15vw;         
     border-radius: 50%;   
     overflow: hidden;  
-    cursor: pointer;   
+    cursor: pointer;
+}
+.curly__hair :hover{
+    opacity: 0.5;
 }
 .curly__hair img {
     width: 100%;
     height: 100%;
     object-fit: cover;    
     display: block;
+    background-color: rgb(255, 221, 192);
 }
 
 

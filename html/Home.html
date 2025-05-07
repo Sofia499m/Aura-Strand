@@ -9,6 +9,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/css/BarMenu.css">
   <link rel="Stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/logout.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- Google Fonts -->
@@ -31,6 +32,9 @@
     <div class="icons">
       <ul class="icon__items">
           <li><a href="#" class="fas fa-user"></a></li>
+          <ul class="dropdown-menu">
+            <li id="username-display">Welcome</li>
+            <li><button class="logout-btn" onclick="logoutUser()">Logout</button></li>
       </ul>
   </div>
 </div>
@@ -60,7 +64,7 @@
     </div> 
   </div>
   <!--show user-->
-<script src="/js/main.js"></script>
+<script src="/js/register.js"></script>
 <script>
   showUserInNavbar();
 </script>

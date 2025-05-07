@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 .curly__hair :hover{
-    opacity: 0.5;
+    opacity: 0.5; /* 50 percent opacity*/
 }
 .curly__hair img {
     width: 100%;

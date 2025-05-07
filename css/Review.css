@@ -12,7 +12,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
 }
-/* Review Section - Full Width Background */
+/* Review Section */
 .review {
     width: 100%;
     background-color: #fff8f0;
@@ -30,7 +30,7 @@ html, body {
     color: rgb(241, 170, 108);
 }
 
-/* Content Container (Still centered and constrained) */
+/* Content Container */
 .review .box-container {
     max-width: 1200px;
     margin: 0 auto;

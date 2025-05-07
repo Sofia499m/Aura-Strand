@@ -5,15 +5,15 @@
     min-height: 30vh;
     width: 100%;
     background: url(/css/images/top\ hairstraight.jpeg) no-repeat;
-    background-size: cover;
+    background-size: cover;/* background image covers the entire section */
     background-position: center;
     justify-content: center;
-    opacity: 0.8;
+    opacity: 0.8; /* opacity to 80% */
 }
 .hair__blowing h1{
     font-size: 20vh;
     color:aliceblue;
-    font-family: "Tangerine", cursive;
+    font-family: "Tangerine", cursive; /* font style */
 }
 .box1{
     display: flex;
@@ -21,8 +21,8 @@
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    gap: .5rem;
-    padding: 2rem;
+    gap: .5rem; /* Adds space between the items inside */
+    padding: 2rem; /* Adds padding inside the container */
 }
 .content1{
     max-width: 50%;

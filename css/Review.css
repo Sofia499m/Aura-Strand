@@ -1,15 +1,7 @@
-:root {
-    --accent: #d4a373;         /* Coconut shell tan */
-    --background: #fff8f0;     /* Soft cream */
-    --text-dark: #3b302a;      /* Deep brown */
-    --text-light: #7d6e63;     /* Muted cocoa */
-    --highlight: #a47c48;      /* Rich nutty brown */
-}
-
 /* Review Section - Full Width Background */
 .review {
     width: 100%;
-    background-color: var(--background);
+    background-color: #fff8f0;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -21,7 +13,7 @@
     color: var(--text-dark);
 }
 .review .heading span {
-    color: var(--accent);
+    color: rgb(241, 170, 108);
 }
 
 /* Content Container (Still centered and constrained) */
@@ -48,13 +40,13 @@
 
 /* Stars */
 .review .stars i {
-    color: var(--highlight);
+    color: rgb(255, 154, 66);
     font-size: 1.5rem;
 }
 
 /* Review Text */
 .review .box p {
-    color: var(--text-light);
+    color: #7d6e63;
     font-size: 1.1rem;
     margin-top: 1rem;
     line-height: 1.6;

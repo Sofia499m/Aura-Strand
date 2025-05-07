@@ -19,7 +19,7 @@ function handleRegister(event) {
   saveUser(username, password);
 }
 
-// Optional: show user in navbar
+// show user in navbar
 function showUserInNavbar() {
   const user = JSON.parse(localStorage.getItem('user'));
   if (user && user.username) {

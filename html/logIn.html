@@ -3,51 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>logIn</title>
+  <title>Log In</title>
 
-  <!-- Link to external CSS -->
+  <!-- External CSS -->
   <link rel="stylesheet" href="/css/logIn.css" />
   <link rel="stylesheet" href="/css/BarMenu.css" />
-  <script src="/js/logIn.js"></script>
 
+  <!-- Fontss -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
 
-  <!-- Boxicons for icons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="menu__bar">
-        <ul class="menu__items">
-          <li><a href="/html/Home.html">Home</a></li>
-          <li><a href="/html/About.html">About</a></li>
-          <li><a href="/html/Shop.html">Shop</a></li>
-          <li><a href="/html/review.html">Review</a></li>
-          <li><a href="/html/contact.html">Contact</a></li>
-        </ul>
-        
-        <!--icons-->
-        <div class="icons">
-          <ul class="icon__items">
-            <li><a href="/html/Shop.html"><i class="fas fa-shopping-cart"></i></a></li>
-          </ul>
-        </div>
-      </div>
+  <!-- Navigation Bar -->
+  <div class="menu__bar">
+    <ul class="menu__items">
+      <li><a href="/html/Home.html">Home</a></li>
+      <li><a href="/html/About.html">About</a></li>
+      <li><a href="/html/Shop.html">Shop</a></li>
+      <li><a href="/html/review.html">Review</a></li>
+      <li><a href="/html/contact.html">Contact</a></li>
+    </ul>
+    <div class="icons">
+      <ul class="icon__items">
+        <li><a href="/html/Shop.html"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
   <!-- Login Form -->
   <div class="wrapper">
-    <form action="">
+    <form id="loginForm">
       <h1>Login</h1>
       <div class="input-box">
-        <input type="text" placeholder="Username" required />
+        <input type="text" name="username" placeholder="Username" required />
         <i class="bx bxs-user"></i>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Password" required />
+        <input type="password" name="password" placeholder="Password" required />
         <i class="bx bxs-lock-alt"></i>
-      </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox" />Remember Me</label>
-        <a href="#">Forgot Password</a>
       </div>
       <button type="submit" class="btn">Login</button>
       <div class="register-link">
@@ -55,5 +49,9 @@
       </div>
     </form>
   </div>
+
+  <!-- External JS -->
+  <script src="/js/logIn.js"></script>
 </body>
 </html>
+

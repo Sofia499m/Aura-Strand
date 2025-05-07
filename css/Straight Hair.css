@@ -2,7 +2,7 @@
 .hair__blowing {
     display:flex;
     align-items: center;
-    min-height: 50vh;
+    min-height: 30vh;
     width: 100%;
     background: url(/css/images/top\ hairstraight.jpeg) no-repeat;
     background-size: cover;
@@ -14,4 +14,33 @@
     font-size: 20vh;
     color:aliceblue;
     font-family: "Tangerine", cursive;
+}
+.box1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    gap: .5rem;
+    padding: 2rem;
+}
+.content1{
+    max-width: 50%;
+
+} 
+.img1{
+    width:30%;
+    height: 30%;
+}
+.content1 h1{
+    font-family: "Markazi Text", serif;
+    font-size: 2.5rem;
+    color: rgb(251, 133, 30);
+}
+.content1 p{
+    font-family: "Markazi Text", serif;
+    font-size: 1.5rem;
+    color: #686767;
+    padding: 1px 0;
+    line-height: 1.5;
 }
